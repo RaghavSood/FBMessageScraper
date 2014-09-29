@@ -33,3 +33,8 @@ Downloading Messages
 4. Run the command `python dumper.py {id} 2000`, and put the value you retrieved for ID earlier
 
 Messages are saved by default to `~/Development/Facebook/MessagesDump/Messages/{id}/`
+
+Known Issues
+============
+
+The script sometimes has trouble with very large conversations (>100k messages). Facebook seems to rate limit this, and returns empty responses. In such cases, the script will retry after 30s until it gets a valid respons.
