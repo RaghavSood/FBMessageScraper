@@ -37,4 +37,8 @@ Messages are saved by default to `~/Development/Facebook/MessagesDump/Messages/{
 Known Issues
 ============
 
-The script sometimes has trouble with very large conversations (>100k messages). Facebook seems to rate limit this, and returns empty responses. In such cases, the script will retry after 30s until it gets a valid respons.
+The script sometimes has trouble with very large conversations (>100k messages). Facebook seems to rate limit this, and returns empty responses. In such cases, the script will retry after 30s until it gets a valid response.
+
+It may take the script several tries to get a valid response. DO NOT PANIC.
+
+Interrupting the execution before completion only leaves the JSON chunks, not the stitched file.
