@@ -87,7 +87,7 @@ while end_mark not in messages_data:
 		except KeyError:
 			pass #no more messages
 	else:
-		print "Error in retrieval. Retrying after " + str(error_timeout)"s"
+		print "Error in retrieval. Retrying after " + str(error_timeout) + "s"
 		print "Data Dump:"
 		print json_data
 		time.sleep(error_timeout)
