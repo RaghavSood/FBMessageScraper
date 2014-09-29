@@ -57,8 +57,8 @@ except OSError:
 
 while end_mark not in messages_data:
 
-	data_text = {"messages[user_ids][" + str(talk) + "][offset]": str(offset), 
-	"messages[user_ids][" + str(talk) + "][limit]": str(limit), 
+	data_text = {"messages[thread_fbids][" + str(talk) + "][offset]": str(offset), 
+	"messages[thread_fbids][" + str(talk) + "][limit]": str(limit), 
 	"client": "web_messenger", 
 	"__user": "your_user_id", 
 	"__a": "your __a", 

@@ -8,6 +8,8 @@ Outputs the conversation in a JSON format, as well as the JSON for each individu
 Initial Setup
 =============
 
+Run for both `dumper.py` and `group_dumper.py`
+
 1. In Chrome, open [facebook.com/messages](https://www.facebook.com/messages/) and open any conversation with a fair number of messages
 2. Open the network tab of the Chrome Developer tools
 3. Scroll up in the conversation until the page attempts to load previous messages
@@ -29,10 +31,10 @@ Downloading Messages
 
 1. Get the conversation ID for those messages by opening [http://graph.facebook.com/{username-of-chat-partner}](http://graph.facebook.com/{username_of_chat_partner})
 2. Copy the `id` value from there
-3. For group conversations, the ID can be retrieved from the messages tab, as part of the URL
+3. For group conversations, the ID can be retrieved from the messages tab, as part of the URL. You must use `group_dumper.py` instead.
 4. Run the command `python dumper.py {id} 2000`, and put the value you retrieved for ID earlier
 
-Messages are saved by default to `~/Development/Facebook/MessagesDump/Messages/{id}/`
+Messages are saved by default to `Messages/{id}/`
 
 Known Issues
 ============
